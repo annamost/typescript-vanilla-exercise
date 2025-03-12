@@ -32,4 +32,6 @@ document.getElementById('operation').addEventListener('change', function () {
     paramContainer.classList.toggle('active', this.value === 'repeat');
 });
 // Event listener for transform button
-document.getElementById('transformButton').addEventListener('click', runTransformation);
+if (document.getElementById('transformButton') != null) {
+    document.getElementById('transformButton').addEventListener('click', runTransformation);
+}

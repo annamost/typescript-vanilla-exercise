@@ -27,7 +27,7 @@ const runTransformation = () => {
   const operation: boolean = document.getElementById('operation').value;
   const param: number = parseInt(document.getElementById('param').value);
   const result: string = transformWord(operation, word, param);
-  const resultContainer: any = document.getElementById('result');
+  const resultContainer = document.getElementById('result');
   resultContainer.textContent = `Result: ${result}`;
   resultContainer.classList.toggle('active', result !== '');
 };
